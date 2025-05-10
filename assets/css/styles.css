@@ -1,44 +1,101 @@
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
     color: #333;
-}
-header {
-    background-color: #0d1b2a;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: linear-gradient(to right, #1f1c2c, #928dab);
     color: white;
     padding: 1rem 0;
-}
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-nav ul {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
     list-style: none;
-    padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-nav ul li a {
-    color: white;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
     text-decoration: none;
-}
-.hero {
-    text-align: center;
-    padding: 4rem 0;
-    background: linear-gradient(to right, #274060, #1b2845);
     color: white;
-}
-footer {
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #1f1c2c;
+    color: white;
     text-align: center;
     padding: 1rem 0;
-    background-color: #0d1b2a;
+    margin-top: 4rem;
+  }
+  
+  .footer .socials a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  .footer .socials a:hover {
     color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+  }
+  
+  /* Container Utility */
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #1f1c2c;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 200px;
+      padding: 1rem;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
