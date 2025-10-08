@@ -1,29 +1,245 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Projects</title>
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Arpit Garg</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>My Projects</h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="../index.html" class="logo">Arpit Garg</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="page-title">My Projects</h1>
+      <p class="page-subtitle">Innovation through engineering excellence</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-page">
+    <div class="container">
+      <div class="projects-intro">
+        <p>Here's a showcase of my engineering projects and research work that demonstrate my skills in mechanical engineering, UAV technology, computational mechanics, and innovative problem-solving.</p>
+      </div>
+
+      <!-- Featured Project -->
+      <div class="featured-project">
+        <div class="project-badge">Featured Project</div>
+        <div class="project-content-detailed">
+          <div class="project-header">
+            <h2><i class="fas fa-star"></i> Swarm-based Object Tracking UAV</h2>
+            <div class="project-meta">
+              <span class="project-type"><i class="fas fa-flask"></i> Research & Development</span>
+              <span class="project-status"><i class="fas fa-check-circle"></i> Completed</span>
+            </div>
+          </div>
+          
+          <div class="project-description">
+            <h3>Project Overview</h3>
+            <p>Developed an innovative swarm-based unmanned aerial vehicle (UAV) system for real-time object tracking. This cutting-edge project combines swarm intelligence algorithms with autonomous drone technology to create a coordinated fleet capable of tracking and monitoring objects with high precision.</p>
+            
+            <h3>Key Features & Technologies</h3>
+            <ul class="features-list">
+              <li><strong>Swarm Intelligence:</strong> Implemented distributed algorithms enabling multiple UAVs to work collaboratively without central control</li>
+              <li><strong>Real-time Object Detection:</strong> Integrated computer vision systems for accurate object identification and tracking</li>
+              <li><strong>Autonomous Navigation:</strong> Developed path planning algorithms for coordinated drone movements</li>
+              <li><strong>Communication Systems:</strong> Established inter-drone communication protocols for seamless data sharing</li>
+            </ul>
+
+            <h3>Technical Approach</h3>
+            <p>The project utilized advanced concepts in:</p>
+            <ul>
+              <li>Swarm robotics and multi-agent systems</li>
+              <li>Machine learning for object recognition</li>
+              <li>Sensor fusion and data processing</li>
+              <li>Autonomous control systems</li>
+            </ul>
+
+            <h3>Impact & Applications</h3>
+            <p>This system has potential applications in:</p>
+            <ul>
+              <li>Search and rescue operations</li>
+              <li>Wildlife monitoring and conservation</li>
+              <li>Surveillance and security</li>
+              <li>Agricultural monitoring</li>
+              <li>Disaster response and assessment</li>
+            </ul>
+
+            <div class="project-tags">
+              <span class="tag">UAV Technology</span>
+              <span class="tag">Swarm Intelligence</span>
+              <span class="tag">Object Tracking</span>
+              <span class="tag">Autonomous Systems</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Robotics</span>
+            </div>
+          </div>
         </div>
-    </header>
-    <section class="hero">
-        <div class="container">
-            <h2>Featured Work</h2>
-            <p>Drag reduction vehicles, hybrid solar systems, AI in journalism – and more!</p>
+      </div>
+
+      <!-- Additional Projects Section -->
+      <div class="projects-grid">
+        <h2 class="section-subtitle">Other Engineering Work</h2>
+        
+        <!-- BIM Projects -->
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <div class="project-info">
+            <h3>Building Information Modeling (BIM) Projects</h3>
+            <p class="project-category">Professional Work - Techture</p>
+            <p>Implemented BIM workflows for architectural design projects using Autodesk Revit. Worked on developing 3D models, coordinating with design teams, and optimizing building designs through parametric modeling techniques.</p>
+            <div class="project-skills">
+              <span>Autodesk Revit</span>
+              <span>AutoCAD</span>
+              <span>BIM Workflows</span>
+              <span>3D Modeling</span>
+            </div>
+          </div>
         </div>
-    </section>
+
+        <!-- Aerospace Work -->
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-plane"></i>
+          </div>
+          <div class="project-info">
+            <h3>Aerospace Technology Projects</h3>
+            <p class="project-category">Internship - Khageshvara Aviation Technology</p>
+            <p>Gained hands-on experience with aviation systems and aerospace engineering projects. Contributed to the analysis and development of aircraft components, learning about aerodynamics, materials science, and aviation standards.</p>
+            <div class="project-skills">
+              <span>Aerospace Engineering</span>
+              <span>Aviation Systems</span>
+              <span>Technical Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CFD Projects -->
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-wind"></i>
+          </div>
+          <div class="project-info">
+            <h3>Computational Fluid Mechanics Studies</h3>
+            <p class="project-category">Academic Research</p>
+            <p>Applied computational fluid dynamics (CFD) techniques to analyze fluid flow patterns and thermal behaviors in various engineering scenarios. Conducted simulations to optimize designs and predict performance characteristics.</p>
+            <div class="project-skills">
+              <span>CFD Analysis</span>
+              <span>Simulation</span>
+              <span>Fluid Mechanics</span>
+              <span>Performance Optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAD Design Projects -->
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-drafting-compass"></i>
+          </div>
+          <div class="project-info">
+            <h3>Advanced CAD Design Projects</h3>
+            <p class="project-category">Academic & Personal</p>
+            <p>Developed complex mechanical designs using Fusion 360 and AutoCAD. Created detailed engineering drawings, 3D models, and performed design optimization for various mechanical components and assemblies.</p>
+            <div class="project-skills">
+              <span>Fusion 360</span>
+              <span>AutoCAD</span>
+              <span>3D Modeling</span>
+              <span>Engineering Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research & Publications Section -->
+      <div class="research-section">
+        <h2 class="section-subtitle"><i class="fas fa-book"></i> Research & Publications</h2>
+        <div class="research-content">
+          <p>As part of my academic journey at BITS Pilani, I've been involved in research activities that bridge theoretical knowledge with practical applications. My primary research focus has been on:</p>
+          <ul>
+            <li>Swarm robotics and multi-agent systems</li>
+            <li>Autonomous UAV technologies</li>
+            <li>Computational mechanics and simulation</li>
+            <li>Advanced CAD/BIM methodologies</li>
+          </ul>
+          <p>I'm actively working on documenting and publishing findings from my swarm-based UAV tracking system project.</p>
+        </div>
+      </div>
+
+      <!-- Skills Applied Across Projects -->
+      <div class="skills-summary">
+        <h2 class="section-subtitle">Technical Skills Applied</h2>
+        <div class="skills-showcase">
+          <div class="skill-item">
+            <i class="fas fa-tools"></i>
+            <h4>Design & Modeling</h4>
+            <p>AutoCAD, Autodesk Revit, Fusion 360, CAD Design</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-calculator"></i>
+            <h4>Analysis & Simulation</h4>
+            <p>Computational Fluid Mechanics, Engineering Analysis, CFD</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-robot"></i>
+            <h4>Emerging Technologies</h4>
+            <p>UAV Systems, Swarm Intelligence, Autonomous Systems</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-project-diagram"></i>
+            <h4>Project Management</h4>
+            <p>Leadership, Team Collaboration, Process Management</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="project-cta">
+        <h2>Interested in Collaboration?</h2>
+        <p>I'm always looking for opportunities to work on innovative engineering projects. If you have an interesting challenge or collaboration opportunity, let's connect!</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Get In Touch
+          </a>
+          <a href="https://github.com/Arpit19garg" target="_blank" class="btn btn-secondary">
+            <i class="fab fa-github"></i> View GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Arpit Garg. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Arpit19garg" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/arpit19garg" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:gargarpit2002@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
 </body>
 </html>
